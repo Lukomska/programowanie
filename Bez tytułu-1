@@ -1,0 +1,22 @@
+function oblicz(){
+var x1= document.getElementById('liczba1').value;
+var x2= document.getElementById('liczba2').value;
+var dzialanie = document.getElementById('dzialanie').value;
+switch(dzialanie) {
+case 'dodawanie' :
+document.getElementById('wynik').value = Number(x1) + Number(x2);
+break;
+case 'odejmowanie' :
+document.getElementById('wynik').value = x1 - x2;
+break;
+case 'mnozenie' :
+document.getElementById('wynik').value = x1 * x2;
+break;
+case 'dzielenie' :
+document.getElementById('wynik').value = x1 / x2;
+break;
+case 'potegowanie' :
+document.getElementById('wynik').value = pow(x1,x2);
+break;
+}
+}

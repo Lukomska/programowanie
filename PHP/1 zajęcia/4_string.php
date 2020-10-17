@@ -97,6 +97,4 @@ $login = 'bączek';
 $censure = array('ą', 'ę', 'ć', 'ż', 'ź', 'ń', 'ł', 'ó', 'ś');
 $replace = array('a', 'e', 'c', 'z', 'z', 'n', 'l', 'o', 's');
 echo str_replace($censure,$replace,$login);
-
-
 ?>

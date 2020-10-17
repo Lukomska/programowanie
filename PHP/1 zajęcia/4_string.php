@@ -81,5 +81,22 @@ echo "$mail<br>";
 $mail = strstr('janusz@gmail.com', 64);
 echo "$mail<br>";
 
+//substring 
+echo substr('Janusz Kowalski', 0),'<br>';
+echo substr('Janusz Kowalski', 7, 5),'<br>';
+echo strlen(substr('Janusz Kowalski', 7, 5));
+
+ob_clean();
+
+//zamiana ciągów
+$replace = str_replace('%korona%', 'grypa', '%korona% jest niebezpieczna');
+echo $replace, '<br>';
+
+// ZADANKO ! usuń z loginu polskie znaki
+$login = 'bączek';
+$censure = array('ą', 'ę', 'ć', 'ż', 'ź', 'ń', 'ł', 'ó', 'ś');
+$replace = array('a', 'e', 'c', 'z', 'z', 'n', 'l', 'o', 's');
+echo str_replace($censure,$replace,$login);
+
 
 ?>

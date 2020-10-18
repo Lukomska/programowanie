@@ -11,10 +11,9 @@
         <input type = "text" name="name" placeholder="Imię"><br><br>
         <input type = "text" name="surname" placeholder="Nazwisko"><br><br>
         <input type = "password" name="pass" placeholder="Hasło"><br><br>
-        <input type = "text" name="zipcode" placeholder="Kod Pocztowy">
-        <input type = "text" name="zipcode2" placeholder="Kod Pocztowy"><br><br>
+        <input type = "text" size="1" name="zipcode" placeholder="Kod">
+        <input type = "text" size="5" name="zipcode2" placeholder="Pocztowy"><br><br>
         <input type="submit" value="Wyślij dane">     
-
     </form>
 </body>
 </html>

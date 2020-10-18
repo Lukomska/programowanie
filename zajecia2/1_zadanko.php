@@ -8,6 +8,15 @@
 <body>
     <h4>Formularz z danymi użytkownika</h4>
     <form action="./1_zadanko_data.php" method="get">
+    <?php
+    
+    If (!empty($_GET['name'])) {
+        $name = $_GET['name'];
+        echo "<input type=\"text\" name=\"name\" placeholder=\"Imię\" value=\"$name\"";
+        }else{
+            echo '<input type="text" name="name" placeholder="Imię">';
+        }
+    ?>
         <input type = "text" name="name" placeholder="Imię"><br><br>
         <input type = "text" name="surname" placeholder="Nazwisko"><br><br>
         <input type = "password" name="pass" placeholder="Hasło"><br><br>
@@ -17,7 +26,7 @@
         <input type="radio" name="color"value="r">Czerwony
         <input type="radio" name="color"value="g">Zielony
         <input type="radio" name="color"value="b">Niebieski<br><br>
-        <input type="checkbox" name="statute">Regulamin<br><br>
+        <input type="checkbox" name="statute">
 
         <input type="submit" value="Wyślij dane">     
     </form>

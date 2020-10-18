@@ -26,6 +26,7 @@
 //wykorzystaj switch do wyświetlenia koloru np. czerwony
 
 If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) && !empty($_GET['zipcode']) && !empty($_GET['zipcode2']) && !empty($_GET['color']) && !empty($_GET['statute'])) {
+    $name = $_GET['name'];
     $color = $_GET['color'];
     switch ($color) {
         case 'r':
@@ -44,7 +45,8 @@ If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) &
     Kod Pocztowy: $_GET[zipcode]-$_GET[zipcode2]<br>
     Ulubiony kolor: $color<hr>
 T;
-    echo '<a href="./1_zadanko.php?historyBack=">Popraw dane w formularzu</a>';
+    echo "<a href=\"./1_zadanko.php?name=$name\">Popraw dane w formularzu</a>";
+    
     }else{
         //header("Location:./1_zadanko.php");
     ?>

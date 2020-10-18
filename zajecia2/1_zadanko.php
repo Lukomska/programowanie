@@ -17,8 +17,7 @@
         <input type="radio" name="color"value="r">Czerwony
         <input type="radio" name="color"value="g">Zielony
         <input type="radio" name="color"value="b">Niebieski<br><br>
-
-        
+        <input type="checkbox" name="statute">Regulamin<br><br>
 
         <input type="submit" value="Wyślij dane">     
     </form>

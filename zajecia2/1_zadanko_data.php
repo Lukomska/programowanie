@@ -12,6 +12,7 @@
     <h4>Dane pobrane z formularza</h4>
     
     <?php
+    //echo '<pre>'
    //1)dodaj pole imie oraz kod pocztowy (składa się z dwóch pól, pierwsze ma rozmiar 2 , drugie 3)
 
 //operatory logiczne AND $$, OR ||
@@ -24,7 +25,7 @@
 
 //wykorzystaj switch do wyświetlenia koloru np. czerwony
 
-If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) && !empty($_GET['zipcode']) && !empty($_GET['zipcode2']) && !empty($_GET['color'])) {
+If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) && !empty($_GET['zipcode']) && !empty($_GET['zipcode2']) && !empty($_GET['color']) && !empty($_GET['statute'])) {
     $color = $_GET['color'];
     switch ($color) {
         case 'r':
@@ -45,8 +46,6 @@ If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) &
 T;
     }else{
         //header("Location:./1_zadanko.php");
-
-
     ?>
     <script>
         history.back();

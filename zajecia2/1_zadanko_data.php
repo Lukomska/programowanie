@@ -12,7 +12,7 @@
     <h4>Dane pobrane z formularza</h4>
     
     <?php
-    //echo '<pre>'
+    //echo '<pre>', print echo 
    //1)dodaj pole imie oraz kod pocztowy (składa się z dwóch pól, pierwsze ma rozmiar 2 , drugie 3)
 
 //operatory logiczne AND $$, OR ||
@@ -42,8 +42,9 @@ If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) &
     Imię i nazwisko: $_GET[name] $_GET[surname]<br>
     Hasło: $_GET[pass]<br>
     Kod Pocztowy: $_GET[zipcode]-$_GET[zipcode2]<br>
-    Ulubiony kolor: $color
+    Ulubiony kolor: $color<hr>
 T;
+    echo '<a href="./1_zadanko.php?historyBack=">Popraw dane w formularzu</a>';
     }else{
         //header("Location:./1_zadanko.php");
     ?>

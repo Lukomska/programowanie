@@ -8,14 +8,24 @@
 <body>
 <h4>Dane pobrane z formularza</h4>
 <?php
-//dodaj pole imie oraz kod pocztowy (składa się z dwóch pól, pierwsze ma rozmiar 2 , drugie 3)
+//1)dodaj pole imie oraz kod pocztowy (składa się z dwóch pól, pierwsze ma rozmiar 2 , drugie 3)
 
-echo <<<T
-    Imię: $_GET[name]<br>
-    Nazwisko: $_GET[surname]<br>
-    Kod Pocztowy: $_GET[zipcode]
-    - $_GET[zipcode2]
+//operatory logiczne AND $$, OR ||
+
+If (!empty($_GET['name']) && !empty(GET['surname'])) {
+    echo 'imie wprowadzone';
+}else{
+    echo 'Wypełnij wszystkie dane';
+}
+
+$data = <<<T
+    Imię i nazwisko: $_GET[name] $_GET[surname]<br>
+    Hasło: $_GET[pass]<br>
+    Kod Pocztowy: $_GET[zipcode] - $_GET[zipcode2]
+    
     T;
+
+    //Sprawdż czy użytkownik wypełnił wszystkie dane , jeśli tak to wyświetl mu heredoc, w przeciwnym razie przekieruj użytkownika do formularza 
 
  ?>   
     

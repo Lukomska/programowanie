@@ -13,6 +13,13 @@
         <input type = "password" name="pass" placeholder="Hasło"><br><br>
         <input type = "text" size="1" name="zipcode" placeholder="00">-
         <input type = "text" size="5" name="zipcode2" placeholder="000"><br><br>
+        <h4>Ulubiony kolor</h4>
+        <input type="radio" name="color"value="r">Czerwony
+        <input type="radio" name="color"value="g">Zielony
+        <input type="radio" name="color"value="b">Niebieski<br><br>
+
+        
+
         <input type="submit" value="Wyślij dane">     
     </form>
 </body>

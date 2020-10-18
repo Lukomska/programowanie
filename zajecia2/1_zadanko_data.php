@@ -25,9 +25,8 @@ If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) &
 }else{
     header('Location: http://localhost/git/zajecia2/1_zadanko.php');
 }
-// po nie wypełnieniu danych. przekierowuje użytkownika do formularza, dane w formularzu mają być wypełnione (oprocz hasła)
+// po nie wypełnieniu danych przekierowuje użytkownika do formularza, dane w formularzu mają być wypełnione (oprocz hasła)
 // wykorzystuje skrypt w js (historia)
-
  ?>   
     
     

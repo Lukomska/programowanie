@@ -12,6 +12,7 @@
     <h4>Dane pobrane z formularza</h4>
     
     <?php
+    //print_r($_GET);
     //echo '<pre>', print echo 
    //1)dodaj pole imie oraz kod pocztowy (składa się z dwóch pól, pierwsze ma rozmiar 2 , drugie 3)
 
@@ -25,9 +26,10 @@
 
 //wykorzystaj switch do wyświetlenia koloru np. czerwony
 
-If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) && !empty($_GET['zipcode']) && !empty($_GET['zipcode2']) && !empty($_GET['color']) && !empty($_GET['statute'])) {
+if (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) && !empty($_GET['zipcode']) && !empty($_GET['zipcode2']) && !empty($_GET['color']) && !empty($_GET['statute'])) {
     $name = $_GET['name'];
     $color = $_GET['color'];
+    $surname = $_GET['surname'];
     switch ($color) {
         case 'r':
             $color = 'czerwony';
@@ -45,13 +47,13 @@ If (!empty($_GET['name']) && !empty($_GET['surname']) && !empty($_GET['pass']) &
     Kod Pocztowy: $_GET[zipcode]-$_GET[zipcode2]<br>
     Ulubiony kolor: $color<hr>
 T;
-    echo "<a href=\"./1_zadanko.php?name=$name\">Popraw dane w formularzu</a>";
-    
+    echo "<a href=\"./1_zadanko.php?name=$name&surname=$surname&color=$_GET[color]\">Popraw dane w formularzu</a>";
     }else{
+        echo "błąd";
         //header("Location:./1_zadanko.php");
     ?>
     <script>
-        history.back();
+        //history.back();
     </script>
     
     <?php

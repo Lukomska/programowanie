@@ -5,7 +5,7 @@ Zabezpiecz formularz przed podaniem pustych danych
 
 Wynik wyświetl w formacie:
 Pole wynosi: 20cm2 (2 ma być w indeksie górnym)
-Obwód wynosi: 20cm2
+Obwód wynosi: 20cm
 
 Dane wyślij z formularza bezpiecznie (POST)
 Obliczenia mają być widoczne w innym pliku

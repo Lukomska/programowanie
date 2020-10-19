@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./homework.css">
     <title>Obliczenia</title>
 </head>
 
@@ -22,7 +23,7 @@
         $po = $_POST['po'];
         $b = $_POST['b'];
         $pole = $a * $b;
-        $obwod = ($a + $b)*2;
+        $obwod = ($a + $b) * 2;
         switch ($po) 
         {
             case 'p':
@@ -34,6 +35,10 @@
                 echo "OBWÓD WYNOSI: $po cm";
                 break;
         }
+    } 
+    else 
+    {
+        echo "<a href=\"homework.php\">Wypełnij wszystkie dane";
     }
 
     ?>

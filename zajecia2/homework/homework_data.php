@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h4>Obliczenia</h4>
+    <h4>WYNIK</h4>
     <?php
 
 

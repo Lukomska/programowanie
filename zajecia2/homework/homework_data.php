@@ -16,7 +16,6 @@
     <h4>WYNIK</h4>
     <?php
 
-
     if (!empty($_POST['a']) && !empty($_POST['b']) && !empty($_POST['po'])) 
     {
         $a = $_POST['a'];
@@ -28,11 +27,13 @@
         {
             case 'p':
                 $po = $pole;
-                echo "POLE WYNOSI: $po cm<sup>2</sup>";
+                echo "POLE WYNOSI: $po cm<sup>2</sup><br><br>";
+                echo "<a href=\"homework.php\">POWRÓT";
                 break;
             case 'o':
                 $po = $obwod;
-                echo "OBWÓD WYNOSI: $po cm";
+                echo "OBWÓD WYNOSI: $po cm<br><br>";
+                echo "<a href=\"homework.php\">POWRÓT";
                 break;
         }
     } 

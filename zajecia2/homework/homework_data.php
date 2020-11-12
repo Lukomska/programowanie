@@ -28,21 +28,27 @@
             case 'p':
                 $po = $pole;
                 echo "POLE WYNOSI: $po cm<sup>2</sup><br><br>";
-                echo "<a href=\"homework.php\">POWRÓT";
+                echo "$a * $b = $po cm<sup>2</sup><br><br>";
+                echo "<a href=\"homework.php\">POWRÓT<br><br>";
                 break;
             case 'o':
                 $po = $obwod;
                 echo "OBWÓD WYNOSI: $po cm<br><br>";
-                echo "<a href=\"homework.php\">POWRÓT";
+                echo "($a + $b) * 2 = $po cm<br><br>";
+                echo "<a href=\"homework.php\">POWRÓT<br><br>";
                 break;
         }
     } 
     else 
     {
-        echo "<a href=\"homework.php\">Wypełnij wszystkie dane";
+        echo "<a href=\"homework.php\">Wypełnij wszystkie dane<br><br>";
     }
+   
 
     ?>
+
+  
+
 </body>
 
 </html>

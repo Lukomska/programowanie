@@ -1,0 +1,5 @@
+Użytkownik w formularzu podaje
+a) swoje miasto (form_user.php) 
+b)ulubiony kolor z listy(select) , do wybory kolory rgb
+Miasto: ...
+1) sprawdź czy dane zostały wypełnione, jeśli nie to użytkownik zostanie przekierowany do strony z formularzem (history.back)

@@ -1,0 +1,34 @@
+SELECT * FROM `cities`
+INSERT INTO `cities`(`id`, `city`, `states_id`) VALUES (Null,'Jarocin',1)
+SELECT * FROM `cities`
+SELECT * FROM `customers`
+SELECT * FROM `cities`
+SELECT * FROM `states`
+SELECT * FROM `customers`
+SELECT * FROM `customers` WHERE `birthday` > 1990-01-20
+SELECT * FROM `customers` WHERE `birthday` <> 2000-01-03
+SELECT * FROM `customers` WHERE `birthday` < 2000-01-03
+SELECT * FROM `customers`
+SELECT * FROM `customers` WHERE birthday IS NULL
+SELECT * FROM `customers` WHERE birthday IS NOT NULL
+SELECT * FROM `customers`
+SELECT * FROM `customers` WHERE birthday IS NOT NULL ORDER BY birthday
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM `customers`
+SELECT * FROM customers INNER JOIN cities ON customers.cities_id=cities.id
+SELECT `customers`.`id` FROM customers INNER JOIN cities ON customers.cities_id=cities.id
+SELECT `customers`.`name` FROM customers INNER JOIN cities ON customers.cities_id=cities.id
+SELECT `customers`.`name`,`customers`.`surname`, `cities`.`city` FROM customers INNER JOIN cities ON customers.cities_id=cities.id
+SELECT `customers`.`name`,`customers`.`surname`, `cities`.`city` FROM customers INNER JOIN cities ON customers.cities_id=cities.id
+SELECT `customers`.`name`,`customers`.`surname` FROM customers INNER JOIN cities ON customers.cities_id=cities.id WHERE `cities`.`city` = 'Poznań'
+SELECT `customers`.`name`,`customers`.`surname`,`states`.`state` FROM customers INNER JOIN cities ON customers.cities_id=cities.id INNER JOIN states ON `cities`.`states_id`=`states`.`id` WHERE `cities`.`city`='Poznań'

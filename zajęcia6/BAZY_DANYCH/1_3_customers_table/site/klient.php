@@ -12,7 +12,7 @@
 
 require_once("../scripts/connect.php");
 
-$sql = "SELECT * FROM customers";
+$sql = "SELECT customers.name,customers.surname,customers.birthday,customers.height,cities.city FROM customers INNER JOIN cities ON customers.cities_id=cities.id ORDER BY surname";
 
 $result = $connect->query($sql);
 
@@ -22,6 +22,7 @@ echo "<tr>
 <th>Nazwisko</th>
 <th>Data Urodzenia</th>
 <th>Wzrost</th>
+<th>Miasto</th>
 </tr>";
 
 while ($row = $result->fetch_assoc()) {
@@ -37,6 +38,7 @@ while ($row = $result->fetch_assoc()) {
     <td>$row[surname]</td>
     <td>$row[birthday]</td>
     <td>$height</td>
+    <td>$row[city]</td>
    </tr>
    ROW;
 }

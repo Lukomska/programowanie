@@ -12,7 +12,7 @@
 
 require_once("../scripts/connect.php");
 
-$sql = "SELECT * FROM states";
+$sql = "SELECT state FROM states ORDER BY state";
 
 $result = $connect->query($sql);
 

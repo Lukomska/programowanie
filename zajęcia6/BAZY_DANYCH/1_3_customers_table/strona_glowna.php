@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Strona Główna</h1>
-    <a href="./klient.php">Lista Klientów<br></a>
-    <a href="./miasto.php">Lista Miast<br></a>
-    <a href="./wojewodztwo.php">Lista Województw<br></a>
+    <a href="./site/klient.php">Lista Klientów<br></a>
+    <a href="./site/miasto.php">Lista Miast<br></a>
+    <a href="./site/wojewodztwo.php">Lista Województw<br></a>
 </body>
 </html>

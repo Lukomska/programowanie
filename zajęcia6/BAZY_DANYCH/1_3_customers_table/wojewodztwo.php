@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Lista klientów</h1>
+    <h1>Lista województw</h1>
     <?php
 
    //Połączenie z bazą danych
@@ -20,36 +20,25 @@
     //Sprawdzenie poprawności z bazą danych
     //echo $connect->connect_errno;
 
-    $sql = "SELECT * FROM customers";
+    $sql = "SELECT * FROM states";
     $result = $connect->query($sql);
 
 echo "<table>";
 echo "<tr>
-<th>Imię</th>
-<th>Nazwisko</th>
-<th>Data Urodzenia</th>
-<th>Wzrost</th>
+<th>Województwa</th>
 </tr>";
 
-    while ($row = $result->fetch_assoc()) {
-        if ($row['height'] == NULL) {
-            $height = "-";
-        }else{
-            $height = $row['height']."cm";
-        }
 
-       echo <<<ROW
-       <tr>
-        <td>$row[name]</td> 
-        <td>$row[surname]</td>
-        <td>$row[birthday]</td>
-        <td>$height</td>
-       </tr>
-       ROW;
+    while ($row = $result->fetch_assoc()) {
+        echo <<<ROW
+        <tr>
+         <td>$row[state]</td> 
+        </tr>
+        ROW;
     }
+    
     echo "</table>";
     $connect->close(); //zamknięcie połączenia z bazą 
     ?>
-    <a href="?test=1">test</a>
 </body>
 </html>

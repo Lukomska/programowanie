@@ -11,5 +11,6 @@
     <a href="./site/klient.php">Lista Klientów<br></a>
     <a href="./site/miasto.php">Lista Miast<br></a>
     <a href="./site/wojewodztwo.php">Lista Województw<br></a>
+    <a href="./site/statystyki.php">Statystyki<br></a>
 </body>
 </html>

@@ -1,0 +1,7 @@
+Wyświetl w pliku statystyki.php 3 najstarsze osoby i wyświetlić
+
+1.  Jan Kowalski, data urodzenia: ...., rok urodzenia:...
+2.
+3.
+
+Utwórz funkcję pobierająca rok urodzenia klienta, dodaj funkcję w osobnym pliku w skryptach

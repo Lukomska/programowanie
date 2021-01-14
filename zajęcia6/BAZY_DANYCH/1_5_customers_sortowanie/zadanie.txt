@@ -1,0 +1,16 @@
+Utwórz na stronie 3 linki:
+1) klienci
+2) miasta
+3) województwa
+
+Po wybraniu linku zostaniemy przekierowani do storn:
+klient.php
+miasto.php
+województwa.php
+
+Na powyższych stronach wyświetl tabelę ze wszystkimi danymi z tabeli np
+na stronie miasto.php:
+
+Miasto| Województwo
+Poznań| Wielkopolskie
+Gniezno| Wielkopolskie

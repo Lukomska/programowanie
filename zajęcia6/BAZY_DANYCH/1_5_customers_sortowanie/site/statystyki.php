@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <title>Statystyki</title>
 </head>
 <body>
@@ -23,25 +24,27 @@ echo "<h3>Ilość osób</h3>";
 <?php
 
 //pobranie ilości osób z formularza
+(!empty($_GET['limit'])) ? $limit = $_GET['limit'] : $limit = 3;
 
-/*
-If(!empty($_GET['limit'])){
-    $limit = $_GET['limit'];
-}else{
-    $limit = 3;
-}
-*/
 
-$limit = (!empty($_GET['limit'])) ? $limit = $_GET['limit'] : $limit = 3;
+//wzrost
+//sortowanie wzrostu
+IF(isset($_GET['sortHeight'])){
+    $sortHeight = $_GET['sortHeight'];
+    }else{
+        $sortHeight = 'desc';
+    }
 
-//3 najwyzsze osoby
-$sql = "SELECT customers.name,customers.surname,customers.birthday,customers.height,cities.city FROM customers INNER JOIN cities ON customers.cities_id=cities.id ORDER BY height DESC LIMIT $limit";
+$sql = "SELECT customers.name,customers.surname,customers.birthday,customers.height,cities.city FROM customers INNER JOIN cities ON customers.cities_id=cities.id WHERE height IS NOT NULL ORDER BY height $sortHeight LIMIT $limit";
 
 $result = $connect->query($sql);
 
-echo"<h3>Wzrost - 3 najwyższe osoby</h3>";
-echo "<ol>";
 
+
+echo"<h3>Wzrost - 3 najwyższe osoby <a href=\"?sortHeight=desc\"><ion-icon name=\"arrow-down-outline\"></ion-icon></a>  <a href=\"?sortHeight=asc\"><ion-icon name=\"arrow-up-outline\"></ion-icon></a></h3>";
+
+
+echo "<ol>";
 while ($row = $result->fetch_assoc()) {
    echo <<<ROW
     <li>$row[name]

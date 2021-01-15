@@ -1,0 +1,15 @@
+table, tr, th, td{
+border:solid 1px grey;
+text-align: center;
+border-collapse:collapse;
+padding: 10px;
+}
+
+th{
+    background-color: rgb(121, 188, 226);
+    color: rgb(105, 103, 103);
+}
+
+table{
+    margin: 10px 0px 0px 20px;
+}

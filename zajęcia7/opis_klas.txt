@@ -1,19 +1,24 @@
 
 
-----------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 Obiekt jest pojedynczym egzemplarzem klasy
 
-----------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 Do składowych odwołujemy się za pomocą operatora -> 
 
-----------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 $this - pseudozmienna
 $this - odwołania do zmiennych składowych
 
 $this reprezentuje obiekt w zasięgu którego został wywołany. Dzięki temu klasa nie musi znać swojej nazwy, aby jej metody mogły odwoływać siędo wewnętrznych zmiennych składowych swojej klasy
 
-----------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
+konstruktor jest to metoda wywoływana w momencie utworzenia obiektu
+
+---------------------------------------------------------------------------
+
+destruktor - działa odwrotnie, czyli wykonuje się kiedy obiekt jest usuwany

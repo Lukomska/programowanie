@@ -9,7 +9,7 @@
 
 <body>
     <h4>Formularz z danymi użytkownika</h4>
-        <form action="data.php" method="get">
+        <form action="./data.php" method="get">
         <input type="text" name="name" placeholder="imię"><br><br>
         <input type="text" name="surname" placeholder="Nazwisko"><br><br>
         <input type="number" name="age" placeholder="Wiek"><br><br>

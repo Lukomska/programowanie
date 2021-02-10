@@ -12,7 +12,7 @@
     <?php
 
 if (!isset($_GET['delete_customers'])) {
-    if ($_GET['delete_customers'] == 0) {
+    if ($_GET['delete_customers'] == 0 || $_GET['delete_customers'] == -1) {
         echo 'Nie usunięto klienta';
     }else if($_GET['delete_customers'] == 1){
         echo 'Prawidłowo usunięto jednego klienta';

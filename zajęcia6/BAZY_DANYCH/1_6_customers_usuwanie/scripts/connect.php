@@ -5,6 +5,6 @@ $username = "root";
 $password = "";
 $db = "teb1";
 
-$connect = mysqli_connect($servername,$username,$password,$db);
+$connect = new mysqli($servername,$username,$password,$db);
 
 ?>

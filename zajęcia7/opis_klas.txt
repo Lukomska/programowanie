@@ -21,4 +21,4 @@ konstruktor jest to metoda wywoływana w momencie utworzenia obiektu
 
 ---------------------------------------------------------------------------
 
-destruktor - działa odwrotnie, czyli wykonuje się kiedy obiekt jest usuwany
+destruktor - działa odwrotnie, czyli wykonuje się kiedy obiekt jest usuwany..

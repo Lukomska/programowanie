@@ -17,7 +17,7 @@ class A //klasa główna
 
 class B extends A //dziedziczenie po klasie A
 {
-    public $b;
+    private $b;
 
     public function setB($b) //metoda
     {
@@ -41,5 +41,7 @@ $objB->setA("Obiekt B korzysta z metody klasy A");
 echo $objB->a,'<br>';
 echo $objB->getA(); 
 
+$objA->b = "test"; //dodanie nowej właściwości do klasy A
+echo $objA->b; //wyświetlenie nowej właściwości klasy A
 
 ?>

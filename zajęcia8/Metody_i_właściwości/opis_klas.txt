@@ -1,0 +1,6 @@
+Nie można utworzyć nowej instancji obiektu klasy abstrakcyjnej
+
+===============================
+
+Klasa nadrzędna, rodzic
+Klasa potmona, podrzędna, dziedzicząca,dziecko

@@ -7,8 +7,9 @@ public function speak(){
 
 class Child extends Person{
     public function speak(){
-        return "Dziecko mówi";
+       return parent::speak();
     }
+    
 }
 
 $person = new Child();

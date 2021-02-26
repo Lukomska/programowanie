@@ -17,3 +17,5 @@ Implementację takiej metody abstrakcyjnej musimy dodać w klasie pochodnej (dzi
 
 Jeżeli klasa ma metodę abstrakcyjnąto musi być również klasą abstrakcyjną
 ===============================
+Interfejsy służą nam do określenia jakie metody muszą zostać zaimplementowane (inaczej mówiąc stworzone) w klasie. Interfejs moze zawierać jedynie deklaracje metod, bez ich ciał. Interfejs deklarujemy podobnie jak klasę, lecz przy użyciu słówka kluczowego interface.
+===============================

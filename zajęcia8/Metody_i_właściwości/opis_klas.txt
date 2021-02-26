@@ -9,3 +9,11 @@ Klasa potmona, podrzędna, dziedzicząca,dziecko
 Czym się różni klasa abstrakcyjna od zwykłej klasy?
 
 Klasa abstrakcyjna - nie można utworzyć obiektu klasy abstrakcyjnej, można po niej dziedziczyć
+
+===============================
+Metoda abstrakcyjna, definiuje jedynie sygnaturę metody bez jej implementacji
+
+Implementację takiej metody abstrakcyjnej musimy dodać w klasie pochodnej (dziedziczącej)
+
+Jeżeli klasa ma metodę abstrakcyjnąto musi być również klasą abstrakcyjną
+===============================

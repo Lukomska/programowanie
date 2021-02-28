@@ -22,9 +22,7 @@ class Person implements PersonInterface {
     }
 }
 
-class Child extends Person{
 
-}
 
 $obj = new Person("Janusz","Nowak");
 $obj->name = "Jan";

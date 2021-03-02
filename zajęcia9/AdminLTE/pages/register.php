@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +22,23 @@
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
       <a href="../" class="h1"><b>Admin</b>LTE</a>
+      <?php
+      if (isset($_SESSION['error'])) {
+        echo <<<ERROR
+      <div class="alert alert-danger alert-dismissible">
+       $_SESSION[error]
+      </div>
+      ERROR;
+      unset($_SESSION['error']);
+      }
+      ?> 
     </div>
     <div class="card-body">
       <p class="login-box-msg">Zarejestruj użytkownika</p>
 
-      <form action="../../index.html" method="post">
+      <form action="../scripts/register.php" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Imię">
+          <input type="text" class="form-control" placeholder="Imię" name = "name">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -35,7 +48,7 @@
         
         <form action="../../index.html" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nazwisko">
+          <input type="text" class="form-control" placeholder="Nazwisko" name = "surname">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -44,7 +57,7 @@
         </div>
 
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name = "email1">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -53,7 +66,7 @@
         </div>
         
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Powtórz Email">
+          <input type="email" class="form-control" placeholder="Powtórz Email" name = "email2">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -62,7 +75,7 @@
         </div>
 
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Hasło">
+          <input type="password" class="form-control" placeholder="Hasło" name = "pass1">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -71,7 +84,7 @@
         </div>
 
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Powtórz hasło">
+          <input type="password" class="form-control" placeholder="Powtórz hasło" name = "pass2">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -80,7 +93,7 @@
         </div>
 
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Miasto">
+          <input type="password" class="form-control" placeholder="Miasto" name = "city">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-city"></span>
@@ -91,7 +104,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <input type="checkbox" id="agreeTerms" name="terms" value="agree" name="confirm">
               <label for="agreeTerms">
               <a href="#">Zatwierdzam regulamin</a>
               </label>

@@ -93,7 +93,7 @@ session_start();
         </div>
 
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Miasto" name = "city">
+          <input type="text" class="form-control" placeholder="Miasto" name = "city">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-city"></span>
